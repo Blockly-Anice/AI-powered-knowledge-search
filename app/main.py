@@ -14,6 +14,7 @@ from app.api.routes.qa import router as qa_router
 
 app = FastAPI(title="Knowledge Base Search & Q&A", version="0.1.0")
 
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -21,6 +22,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 
 @app.on_event("startup")
