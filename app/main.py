@@ -12,7 +12,7 @@ from app.api.routes.search import router as search_router
 from app.api.routes.qa import router as qa_router
 
 
-# app = FastAPI(title="Knowledge Base Search & Q&A", version="0.1.0")
+app = FastAPI(title="Knowledge Base Search & Q&A", version="0.1.0")
 
 
 app.add_middleware(
