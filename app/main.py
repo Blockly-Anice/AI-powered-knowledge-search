@@ -11,7 +11,6 @@ from app.api.routes.ingest import router as ingest_router
 from app.api.routes.search import router as search_router
 from app.api.routes.qa import router as qa_router
 
-
 app = FastAPI(title="Knowledge Base Search & Q&A", version="0.1.0")
 
 app.add_middleware(
@@ -21,7 +20,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 @app.on_event("startup")
 def on_startup() -> None:
